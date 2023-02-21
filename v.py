@@ -11,7 +11,7 @@ from watchdog.events import FileSystemEventHandler
 cwd = os.getcwd()
 
 # Set the project name and expected version
-project = "com.caseware.za.e.sme.2022"
+project = "<project_name>"
 file_name = "package.json"
 package_file = os.path.join(cwd, file_name)
 
@@ -45,7 +45,7 @@ observer.start()
 
 while True:
     # Get the XML data from the URL
-    url = "..."
+    url = "<request_url>"
     response = requests.get(url)
     root = ET.fromstring(response.text)
 
